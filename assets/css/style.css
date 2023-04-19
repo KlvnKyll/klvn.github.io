@@ -1,0 +1,58 @@
+body{
+    background-color: #261916;
+    overflow: hidden;
+    padding-right: 5rem;
+}
+
+section{
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home #particles-js{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 120%;
+}
+
+.home::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: .5;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color: #E06E57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    position: relative;
+    animation: blink 2s linear infinite;
+    
+}
+
+.link:hover{
+    color: #cc9284;
+}
